@@ -1,0 +1,22 @@
+<h1>Bottles#99</h1>
+<p>Find me in app/views/bottles/99.html.erb</p>
+
+<%
+
+i = 99
+
+99.times do
+	output = "#{i} bottles of beer on the wall!"
+
+	if i == 1
+		output = "Ah boooo, only #{i} bottle of beer left!"
+	end
+%>
+	<%=output%><br>
+<%
+	i -= 1	
+end
+
+%>
+
+

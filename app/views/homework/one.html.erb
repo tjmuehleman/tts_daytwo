@@ -1,0 +1,20 @@
+<h1>Recipes</h1>
+<p>Print out the third and upper case it</p>
+
+<h3>Using even?</h3>
+<%@ingredients.each_with_index do |ingredient,i|%>
+<%if i.even?%>
+<h1><%=ingredient%></h1>
+<%else%>
+<h4><%=ingredient%></h4>
+<%end%>
+<%end%>
+
+<h3>Using modulo</h3>
+<%@ingredients.each_with_index do |ingredient,i|%>
+<%if i % 2 == 0%>
+<h1><%=ingredient%></h1>
+<%else%>
+<h4><%=ingredient%></h4>
+<%end%>
+<%end%>
