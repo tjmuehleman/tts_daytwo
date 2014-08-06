@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'static/test'
+
   get 'bottles/bottles'
 
   resources :blogs
